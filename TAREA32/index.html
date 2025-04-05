@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual Simetry</title>
+    
+    <style>
+        /* Estilos generales del body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Header de la tienda */
+        header {
+            background-color: rgb(157, 175, 74);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        /* Contenedor de los productos */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Hacemos que las columnas se ajusten */
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .product-card img {
+            width: 100%;
+            height: 300px; /* Hacemos que la imagen sea más grande */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        /* Efecto de hover en las imágenes de productos */
+        .product-card:hover img {
+            transform: scale(1.1); /* Hace que la imagen se agrande */
+        }
+        /* Detalles de los productos */
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-info h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #333;
+        }
+        .product-info p {
+            font-size: 18px;
+            color: #777;
+            margin: 10px 0;
+        }
+        .product-info button {
+            background-color: rgb(157, 175, 74);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-info button:hover {
+            background-color: #4a7c2b; /* Cambio de color al pasar el puntero */
+        }
+        /* Estilo para la sección del video */
+        .video-section {
+            background-color: rgb(157, 175, 74);
+            padding: 40px 0;
+            text-align: center;
+        }
+        .video-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .video-section iframe {
+            border-radius: 10px;
+            width: 80%;
+            height: 400px;
+            max-width: 800px;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda Deportiva Simetry</h1>
+    </header>
+
+    <div class="product-container">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/1.jpg" alt="Producto 1">
+            <div class="product-info">
+                <h3>Pro Elite | Compression Anti UV | Polo | Gris</h3>
+                <p>$25.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/2.jpg" alt="Producto 2">
+            <div class="product-info">
+                <h3>Polo Licrado Deportivo Hombre Gym</h3>
+                <p>$69.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/3.jpg" alt="Producto 3">
+            <div class="product-info">
+                <h3>LEGGIN DEPORTIVA NEGRA</h3>
+                <p>$48.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/4.jpg" alt="Producto 4"> 
+            <div class="product-info">
+                <h3>Camiseta deportiva de secado rápido y silueta semiajustada</h3>
+                <p>$96.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 5 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/5.jpg" alt="Producto 5"> 
+            <div class="product-info">
+                <h3>LEGGIN DEPORTIVA ACAMPANADA</h3>
+                <p>$56.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 6 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/6.jpg" alt="Producto 6"> 
+            <div class="product-info">
+                <h3>Camiseta Deportiva Manga Corta</h3>
+                <p>$60.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 7 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/7.jpg" alt="Producto 7">
+            <div class="product-info">
+                <h3>Top deportivo espalda atlética</h3>
+                <p>$90.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 8 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/8.jpg" alt="Producto 8"> 
+            <div class="product-info">
+                <h3>Camiseta Arquero M/Larga Pro-One Stripe Verde</h3>
+                <p>$90.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 9 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/9.jpg" alt="Producto 9"> 
+            <div class="product-info">
+                <h3>Conjunto 2pz Deportivo Licra</h3>
+                <p>$30.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 10 -->
+        <div class="product-card">
+            <img src="../TAREA32/picture/10.jpg" alt="Producto 10"> 
+            <div class="product-info">
+                <h3>Camiseta Running Mujer</h3>
+                <p>$70.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección del video -->
+    <section class="video-section">
+        <h2>Descubre nuestro catálogo</h2>
+        <iframe src="https://www.youtube.com/embed/liNxSagS_80?si=TQVYktbkGpbfUJdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tienda Simetry | Todos los derechos reservados</p>
+        <p><strong>Contacto:</strong> <a href="tel:+51 952235740">+51 952235740</a></p>
+    </footer>
+</body>
+</html>
