@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Header de la tienda */
+header {
+    background-color: rgb(157, 175, 74);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+header h1 {
+    font-size: 36px;
+}
+/* Contenedor de los productos */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Hacemos que las columnas se ajusten */
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.product-card img {
+    width: 100%;
+    height: 300px; /* Hacemos que la imagen sea más grande */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+/* Efecto de hover en las imágenes de productos */
+.product-card:hover img {
+    transform: scale(1.1); /* Hace que la imagen se agrande */
+}
+/* Detalles de los productos */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+.product-info h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+.product-info p {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+}
+.product-info button {
+    background-color: rgb(157, 175, 74);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product-info button:hover {
+    background-color: #4a7c2b; /* Cambio de color al pasar el puntero */
+}
+/* Estilo para la sección del video */
+.video-section {
+    background-color: rgb(157, 175, 74);
+    padding: 40px 0;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.video-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+.video-section iframe {
+    border-radius: 10px;
+    width: 80%;
+    height: 400px;
+    max-width: 800px;
+}
+#mapa {
+    background-color: rgb(157, 175, 74);
+    padding: 40px;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+#mapa h2 {
+    color: white;
+}
+.registrar{
+    margin-left: 50px;
+}
+.siderbar{
+    margin-left: 50px;
+}
+hr{
+    border: 1.5px solid #979393;
+}
+.despedida{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(149, 177, 27);
+    text-align: center;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

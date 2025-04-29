@@ -1,0 +1,16 @@
+
+.clock-container{
+    background-color: rgb(149, 177, 27);
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    width: 35%;
+}
+#clock{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}

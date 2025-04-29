@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ienda Virtual Simetry</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo_carrusel.css">
+    <link rel="stylesheet" href="estilo_reloj.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Deportiva Simetry</h1>
+    </header>
+
+    <div class="clock-container">
+        <div id="clock">00:00:00</div>
+    </div>
+
+    <script src="reloj.js"></script>
+
+    <div class="carousel">
+        <img id="carousel-img" src="imagenes/img1.jpeg" 
+        alt="Imagen1">
+        <div class="controls">
+            <button onclick="imagenAnterior()"><</button>
+            <button onclick="imagenSiguiente()">></button>
+        </div>
+    </div>
+
+    <script src="carrusel.js"></script>
+
+    <div class="product-container">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <img src="fotos/foto1.jpeg" alt="Producto 1">
+            <div class="product-info">
+                <h3>Pro Elite | Compression Anti UV | Polo | Gris</h3>
+                <p>$25.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <img src="fotos/foto2.jpeg" alt="Producto 2">
+            <div class="product-info">
+                <h3>Polo Licrado Deportivo Hombre Gym</h3>
+                <p>$69.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <img src="fotos/foto3.jpeg" alt="Producto 3">
+            <div class="product-info">
+                <h3>LEGGIN DEPORTIVA NEGRA</h3>
+                <p>$48.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <img src="fotos/foto4.jpeg" alt="Producto 4"> 
+            <div class="product-info">
+                <h3>Camiseta deportiva de secado rápido y silueta semiajustada</h3>
+                <p>$96.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 5 -->
+        <div class="product-card">
+            <img src="fotos/foto5.jpeg" alt="Producto 5"> 
+            <div class="product-info">
+                <h3>LEGGIN DEPORTIVA ACAMPANADA</h3>
+                <p>$56.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 6 -->
+        <div class="product-card">
+            <img src="fotos/foto6.jpeg" alt="Producto 6"> 
+            <div class="product-info">
+                <h3>Camiseta Deportiva Manga Corta</h3>
+                <p>$60.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 7 -->
+        <div class="product-card">
+            <img src="fotos/foto7.jpeg" alt="Producto 7">
+            <div class="product-info">
+                <h3>Top deportivo espalda atlética</h3>
+                <p>$90.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <!-- Producto 8 -->
+        <div class="product-card">
+            <img src="fotos/foto8.jpeg" alt="Producto 8"> 
+            <div class="product-info">
+                <h3>Camiseta Arquero M/Larga Pro-One Stripe Verde</h3>
+                <p>$90.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección del video -->
+    <section class="video-section">
+        <h2>Descubre nuestro catálogo</h2>
+        <iframe src="https://www.youtube.com/embed/liNxSagS_80?si=TQVYktbkGpbfUJdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </section>
+
+    <section id="mapa">
+        <h2>Ubícanos en Certus SJL</h2>
+        <iframe src="https://www.google.com/maps?q=Certus+San+Juan+de+Lurigancho&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <hr>
+    <section class="registrar">
+        <h1>Registro del Cliente</h1>
+        <p>Registre sus datos aquí</p>
+        <a href="validación.html">Regístrese Aquí</a>
+    </section>
+    <script src="validar.js"></script>
+    <hr>
+    <section class="siderbar">
+        <div>
+            <h1>Formulario de venta del producto</h1>
+            <p>Ingrese al formulario</p>
+            <a href="formulario.html">Ingrese Aquí</a>
+        </div>
+    </section>
+    <hr>
+
+    <div class="despedida">
+        <h1>GRACIAS POR SU VISITA</h1>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tienda Simetry | Todos los derechos reservados</p>
+        <p><strong>Contacto:</strong> <a href="tel:+51 952235740">+51 952235740</a></p>
+    </footer>
+
+    </div>
+</body>
+</html>
